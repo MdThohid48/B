@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Vaultix | Role Dashboards</title><link rel='stylesheet' href='../../assets/styles.css'></head>
+<body>
+<div class='page-shell'>
+  <aside class='sidebar glass slide-in'>
+    <a class='side-link active' href='#owner'>🏠 <span class='side-label'>Dashboard</span></a>
+    <a class='side-link' href='../cloud/index.html'>☁️ <span class='side-label'>Cloud Storage</span></a>
+    <a class='side-link' href='#requests'>📨 <span class='side-label'>Access Requests</span></a>
+    <a class='side-link' href='../analytics/index.html'>📊 <span class='side-label'>Analytics</span></a>
+    <a class='side-link' href='../profile/index.html'>👤 <span class='side-label'>Profile</span></a>
+    <a class='side-link' href='../settings/index.html'>⚙️ <span class='side-label'>Settings</span></a>
+  </aside>
+  <main class='content-shell fade-in'>
+    <header class='top-nav glass'><div class='logo'><span class='logo-mark'></span>Vaultix</div><div class='nav-meta'><span class='badge primary'>Data Owner</span><button class='icon-btn'>🔔</button><div class='avatar'>DO</div></div></header>
+
+    <section id='owner' class='glass card'>
+      <h2>Data Owner Dashboard</h2><p class='subtle'>Institution-level storage governance overview.</p>
+      <div class='grid grid-4'>
+        <article class='card glass'><p class='subtle'>Total Files</p><div class='metric'>12,804</div></article>
+        <article class='card glass'><p class='subtle'>Storage Used</p><div class='metric'>4.2 TB</div></article>
+        <article class='card glass'><p class='subtle'>Requests Received</p><div class='metric'>324</div></article>
+        <article class='card glass'><p class='subtle'>Approved Users</p><div class='metric'>198</div></article>
+      </div>
+      <div class='grid grid-2' style='margin-top:1rem;'>
+        <div class='upload-zone'>Drag & drop encrypted files<br><button class='btn' style='margin-top:.8rem'>Upload Files</button></div>
+        <div class='card glass'><h3>Permission Tags</h3><span class='badge primary'>Confidential</span> <span class='badge warning'>Internal</span> <span class='badge success'>Shareable</span><h3 style='margin-top:1rem'>Access Alerts</h3><p class='subtle'>8 high-priority requests pending review.</p></div>
+      </div>
+    </section>
+
+    <section class='glass card' style='margin-top:1rem;'>
+      <h2>Data User Dashboard</h2>
+      <div class='grid grid-3'>
+        <article class='card glass'><h3>Available Files</h3><p class='subtle'>2,490 files indexed</p></article>
+        <article class='card glass'><h3>Request Access</h3><button class='btn'>New Request</button></article>
+        <article class='card glass'><h3>Approval Status</h3><span class='badge success'>Approved</span> <span class='badge warning'>Pending</span></article>
+      </div>
+      <table class='table'><thead><tr><th>File</th><th>Category</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>ledger-q1.csv</td><td>Finance</td><td><span class='badge warning'>Pending</span></td><td><button class='btn ghost'>Request</button></td></tr></tbody></table>
+    </section>
+
+    <section class='glass card' style='margin-top:1rem;'>
+      <h2>Trust Authority Dashboard</h2>
+      <div class='grid grid-3'>
+        <article class='card glass'><h3>Approval Queue</h3><div class='metric'>61</div></article>
+        <article class='card glass'><h3>Risk Indicators</h3><span class='badge danger'>7 elevated</span></article>
+        <article class='card glass'><h3>Audit Logs</h3><p class='subtle'>Live immutable trace enabled.</p></article>
+      </div>
+      <table class='table'><thead><tr><th>User</th><th>Request</th><th>Risk</th><th>Decision</th></tr></thead><tbody><tr><td>Analyst-02</td><td>Access patient_records.zip</td><td><span class='badge danger'>High</span></td><td><button class='btn ghost'>Approve</button> <button class='btn ghost'>Reject</button></td></tr></tbody></table>
+    </section>
+  </main>
+</div>
+</body></html>
