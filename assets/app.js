@@ -1,3 +1,4 @@
+codex/design-frontend-system-for-vaultix-hc6fqj
 const API = '/api';
 
 const storage = {
@@ -39,6 +40,9 @@ function badgeClass(status) {
   return 'warning';
 }
 
+
+
+main
 document.querySelectorAll('[data-progress]').forEach((bar) => {
   bar.style.width = `${bar.dataset.progress}%`;
 });
@@ -52,6 +56,7 @@ document.querySelectorAll('[data-otp]').forEach((group) => {
     });
   });
 });
+codex/design-frontend-system-for-vaultix-hc6fqj
 
 const loginForm = document.querySelector('#login-form');
 if (loginForm) {
@@ -211,3 +216,4 @@ if (analyticsBox && requireAuth()) {
     if (cat) cat.textContent = (a.categories || []).join(', ');
   }).catch(() => {});
 }
+main
