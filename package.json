@@ -1,0 +1,10 @@
+{
+  "name": "vaultix-fullstack",
+  "version": "1.0.0",
+  "description": "VAULTIX full working frontend + backend prototype",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "u_owner_1",
+      "name": "Olivia Owner",
+      "email": "owner@vaultix.io",
+      "passwordHash": "72b8ff271e32167a4d40120ea3c256d5:658ba047695eb3aec67384f0f482a50a7802b60654c7212673c61ea6dbc9f7a91e352d8784b3f057673bf6433b0398547684ed6c8d77e3987d694961c31c3469",
+      "role": "data_owner",
+      "organization": "Vaultix Labs",
+      "phone": "+1 415 555 0110",
+      "location": "San Francisco",
+      "bio": "Data governance lead"
+    },
+    {
+      "id": "u_user_1",
+      "name": "Uri User",
+      "email": "user@vaultix.io",
+      "passwordHash": "8f8b104a804b02dccd859fbfa946a574:db26123b440ad98947c74797df47ca40b7f908694f3c9decdedce5e28792ce992ea7586f978b3f15cdf79748a8ae87174a3eca4cca0094fe58a12b6b1bba44ac",
+      "role": "data_user",
+      "organization": "FinTrust Inc",
+      "phone": "+1 415 555 0120",
+      "location": "New York",
+      "bio": "Risk analytics engineer"
+    },
+    {
+      "id": "u_ta_1",
+      "name": "Tracy Authority",
+      "email": "authority@vaultix.io",
+      "passwordHash": "7992573b11a13933a86f44b4d6528f0d:1cfb268670909c6eaf7f4bdbada0cb0b9e890a5ccc7350fc3bd71ec69cac434abe4ac34530f05ec28dcbcd093a49403a48c1089a25001a56b99840dbf3e8a24c",
+      "role": "trust_authority",
+      "organization": "Vaultix Labs",
+      "phone": "+1 415 555 0130",
+      "location": "Boston",
+      "bio": "Trust authority reviewer"
+    }
+  ],
+  "files": [
+    {
+      "id": "f1",
+      "name": "Encrypted Contracts.pdf",
+      "category": "Legal",
+      "sizeMb": 12,
+      "ownerId": "u_owner_1",
+      "permission": "Confidential"
+    },
+    {
+      "id": "f2",
+      "name": "Quarterly Ledger.csv",
+      "category": "Finance",
+      "sizeMb": 4,
+      "ownerId": "u_owner_1",
+      "permission": "Internal"
+    }
+  ],
+  "accessRequests": [
+    {
+      "id": "r1",
+      "fileId": "f1",
+      "requesterId": "u_user_1",
+      "status": "pending",
+      "reason": "Quarterly audit",
+      "risk": "low",
+      "createdAt": "2026-02-14T10:00:00.000Z"
+    }
+  ],
+  "settings": {}
+}
